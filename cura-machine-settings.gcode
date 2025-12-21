@@ -16,6 +16,7 @@ M109 S150
 ; --- HOMING & LEVELING ---
 G28 ; Home all axes
 G29 ; Auto Bed Leveling (25 points)
+M420 S1 Z10 ; Force-enable leveling and fade out correction over 10mm
 
 ; --- FINAL HEATING ---
 ; Move to the front left corner to heat up safely (avoids dripping on the print area)
